@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background: linear-gradient(to right, #2d2d42, #161d33);
+    background-size: 500% auto;
+    animation: fundo-animado 3s infinite alternate;
+    color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadastro-card {
+    margin-top: 100px;
+    width: 450px;
+    min-height: 800px;
+    padding: 20px 30px 44px;
+    border-radius: 24px;
+    background-color: #1d1e20;;
+    text-align: center;
+}
+
+.cadastro-card > h2 {
+    margin: 0 0 12px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.cadastro-card > h3 {
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f9f9f9;;
+}
+
+.cadastro-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    justify-content: center;
+}
+
+input, button {
+    width: 400px;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #4f2ee2;
+    color: #f9f9f9;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.767) 2px 5px 10px;
+}
+
+.botao-lista {
+    margin-top: -300px;
+    width: 400px;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background: #4f2ee2;
+    color: #f9f9f9;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.767) 2px 5px 10px;
+}
+
+.botao-confirma {
+    border: none;
+    margin-top: -200px;
+    width: 200px;
+    background: #17c74c;
+    color: #f9f9f9;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.767) 2px 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 18px;
+}
+
+@keyframes fundo-animado {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .cadastro-card {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .cadastro-form > input,
+    .cadastro-form > button {
+    width: 250px;
+}
+}
+

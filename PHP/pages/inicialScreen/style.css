@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #2d2d42, #161d33);
+    background-size: 500% auto;
+    animation: fundo-animado 3s infinite alternate;
+    color: #f9f9f9;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 450px;
+    min-height: 100px;
+    padding: 30px 30px 44px;
+    border-radius: 24px;
+    background-color: #1d1e20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    text-align: center;
+}
+
+.principal {
+    display: grid;
+    width: 190px;
+    height: 56px;
+    margin: 0;
+    border-radius: 8px;
+    border: none;
+    background: #4f2ee2;
+    font-weight: 600;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.767) 2px 5px 10px;
+}
+
+.sair {
+    display: grid;
+    width: 190px;
+    height: 56px;
+    margin: 0;
+    border-radius: 8px;
+    border: none;
+    background: #cc1717;
+    font-weight: 600;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.767) 2px 5px 10px;
+    cursor: pointer;
+}
+
+a, p {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.sair:hover{
+    box-shadow: #e033338c 2px 5px 10px;
+    transition: .5s;
+
+}
+.principal:hover {
+    background-color: #f9f9f9;
+    color: #4f2ee2;
+    box-shadow: #4f2ee28c 2px 5px 10px;
+    transition: .5s;
+}
+
+@keyframes fundo-animado {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 300px;
+        min-height: 200px;
+        display: grid;
+    }
+}
